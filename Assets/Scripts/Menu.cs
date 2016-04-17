@@ -8,6 +8,11 @@ public class Menu : MonoBehaviour
     public GameObject autors;
     public GameObject pron;
 
+    public void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
