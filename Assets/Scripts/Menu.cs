@@ -6,7 +6,7 @@ public class Menu : MonoBehaviour
 {
     public GameObject settings;
     public GameObject autors;
-    public GameObject pron;
+    public GameObject multiplayer;
 
     public void Start()
     {
@@ -25,9 +25,9 @@ public class Menu : MonoBehaviour
     {
         autors.SetActive(!autors.activeSelf);
     }
-    public void Pron()
+    public void Multiplayer()
     {
-        pron.SetActive(!pron.activeSelf);
+        multiplayer.SetActive(!multiplayer.activeSelf);
     }
 
     public void Exit()

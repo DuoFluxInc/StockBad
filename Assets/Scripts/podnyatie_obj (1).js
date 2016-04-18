@@ -10,7 +10,7 @@ var offset : Transform;
 
 
 function Update(){
-    if (Input.GetKey(KeyCode.E)){//если нажата клавиша Е
+    if (Input.GetKey(KeyCode.Q)){//если нажата клавиша Q
 
         Physics.Raycast(transform.position, transform.forward, hit, RayDistance);//физический луч
 
@@ -38,13 +38,13 @@ function Update(){
             Throw = false;
         }
     }
-        /*if(Input.GetKeyDown("e") && enter){
+        /*if(Input.GetKeyDown("q") && enter){
             //open = !open;
         }
         }
         function OnGUI(){
             if(enter){
-                GUI.Label(new Rect(Screen.width/2 - 75, Screen.height - 100, 150, 30), "Press 'E' to open the door");
+                GUI.Label(new Rect(Screen.width/2 - 75, Screen.height - 100, 150, 30), "Press 'q' to open the door");
             }
         }
         
