@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Door : MonoBehaviour
 {
-
+    float smooth = 2.0f;
     float DoorOpenAngle = 90.0f;
     private bool open;
     private bool enter;
@@ -13,15 +13,16 @@ public class Door : MonoBehaviour
 
     void Start()
     {
-        defaultRot = transform.position;
+        defaultRot = transform.eulerAngles;
         openRot = new Vector3(defaultRot.x, defaultRot.y + DoorOpenAngle, defaultRot.z);
     }
+
     void Update()
     {
         if (open)
-            transform.eulerAngles = Vector3.Slerp(transform.position, openRot, Time.deltaTime * 2);
+            transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, openRot, Time.deltaTime * smooth);
         else
-            transform.eulerAngles = Vector3.Slerp(transform.position, defaultRot, Time.deltaTime * 2);
+            transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaultRot, Time.deltaTime * smooth);
 
         if (Input.GetKeyDown("f") && enter) open = !open;
     }
