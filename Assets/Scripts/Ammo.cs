@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Ammo : MonoBehaviour {
     public Shoot teat;
-	void Update ()
+    public Shoot2 teat2;
+    void Update ()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (Input.GetButtonDown("Use")& Vector3.Distance(transform.position, player.transform.position)<2)
@@ -11,5 +12,10 @@ public class Ammo : MonoBehaviour {
             teat.AllBullet += teat.BulletCount;
             Destroy(gameObject);
         }
-	}
+        if (Input.GetButtonDown("Use") & Vector3.Distance(transform.position, player.transform.position) < 2)
+        {
+            teat2.AllBullet += teat2.BulletCount;
+            Destroy(gameObject);
+        }
+    }
 }
