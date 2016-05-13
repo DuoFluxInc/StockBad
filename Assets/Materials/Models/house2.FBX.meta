@@ -102,6 +102,25 @@ ModelImporter:
     4300032: Object008
     4300034: Object009
     4300036: Object010
+    6400000: Box001
+    6400002: Box002
+    6400004: Box018
+    6400006: Box034
+    6400008: Box035
+    6400010: Box037
+    6400012: Box038
+    6400014: Box039
+    6400016: Box040
+    6400018: Box041
+    6400020: Box042
+    6400022: Box046
+    6400024: Object005
+    6400026: Object006
+    6400028: Object007
+    6400030: Object008
+    6400032: Object009
+    6400034: Object010
+    6400036: Plane001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -124,17 +143,17 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    optimizeMeshForGPU: 0
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
